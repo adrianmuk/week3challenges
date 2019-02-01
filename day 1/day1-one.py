@@ -1,7 +1,7 @@
 
-x = int(input("Enter year of birth: "))
+Birthyear = int(input("Enter year of birth: "))
 
-years = 2019 - x
+years = 2019 - Birthyear
 
 if years <= 17:
     print ("You're a minor")

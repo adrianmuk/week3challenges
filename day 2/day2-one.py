@@ -1,15 +1,15 @@
-y = str(input("Enter text: "))
 def great(word):
-        listy = []
+        
+        set1 = set()
+        set2 = set()
         vowels = ['a', 'e', 'i', 'o', 'u']
         for i in word:
+                if word.count(i) >= 2:
+                        set1.add(i)
                 if i in vowels:
-                        listy.append(i)
-       # result = listy + ' ' + y.count(i)
-       # return result
-        #for i in range (1):
-               # return result
-        print(listy)
-                #for y == "exit":
-                       # break
-great(y)
+                        set2.add(i)
+        strike = "". join(set2)
+        shoot = len(set1)
+        return (strike, shoot)
+word = str(input("Enter text: "))
+print(great(word))
