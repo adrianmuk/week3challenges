@@ -4,4 +4,5 @@ def power(number, power_to_raise):
         return number * power(number, power_to_raise)
     else:
         return 1
-print(power(2, 4))
+result = power(2, -1)
+print(result)

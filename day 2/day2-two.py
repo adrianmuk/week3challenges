@@ -1,19 +1,22 @@
-def fizzbuzz(word1 , word2):
-    mylist1 = len(word1)
-    mylist2 = len(word2)
-    list = (mylist1 + mylist2)
-    if list % 3 == 0:
-        print("fizz")
-    elif list % 5 == 0:
-        print("buzz")
-    elif list % 5 == 0 and list % 3 == 0:
-        print("fizzbuzz")
+def fizzbuzz(list1 , list2):
+    mylist1 = len(list1)
+    mylist2 = len(list2)
+    mylist3 = (mylist1 + mylist2)
+    if (mylist3 % 5 == 0) and (mylist3 % 3 == 0):
+        return("fizzbuzz\n")
+    elif (mylist3 % 3 == 0):
+        return("fizz\n")
+    elif (mylist3 % 5 == 0):
+        return("buzz")
+    
     else:
-        print("error")
-    return list
+        return("error")
+    
 
-mylist1 = input("enter string 1: ")
-mylist2 = input("enter string 2: ")
+mylist1 = list(input("enter string 1: "))
+print(mylist1)
+mylist2 = list(input("enter string 2: "))
+print(mylist2)
 
 print(fizzbuzz(mylist1 ,mylist2))
 
